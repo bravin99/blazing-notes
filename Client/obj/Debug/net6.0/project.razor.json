@@ -41,121 +41,35 @@
         }
       },
       {
-        "HashCode": -674613192,
+        "HashCode": -1372865347,
         "Kind": "Components.Component",
-        "Name": "blazing_notes.Client.Pages.Counter",
+        "Name": "blazing_notes.Client.Shared.Loading",
         "AssemblyName": "blazing-notes.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "Loading"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazing_notes.Client.Pages.Counter"
+          "Common.TypeName": "blazing_notes.Client.Shared.Loading"
         }
       },
       {
-        "HashCode": -998722841,
+        "HashCode": -1295518449,
         "Kind": "Components.Component",
-        "Name": "blazing_notes.Client.Pages.Counter",
+        "Name": "blazing_notes.Client.Shared.Loading",
         "AssemblyName": "blazing-notes.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "blazing_notes.Client.Pages.Counter"
+            "TagName": "blazing_notes.Client.Shared.Loading"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazing_notes.Client.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2016421662,
-        "Kind": "Components.Component",
-        "Name": "blazing_notes.Client.Pages.Index",
-        "AssemblyName": "blazing-notes.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazing_notes.Client.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 1999219798,
-        "Kind": "Components.Component",
-        "Name": "blazing_notes.Client.Pages.Index",
-        "AssemblyName": "blazing-notes.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazing_notes.Client.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazing_notes.Client.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -651795745,
-        "Kind": "Components.Component",
-        "Name": "blazing_notes.Client.Shared.SurveyPrompt",
-        "AssemblyName": "blazing-notes.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazing_notes.Client.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": -1895128445,
-        "Kind": "Components.Component",
-        "Name": "blazing_notes.Client.Shared.SurveyPrompt",
-        "AssemblyName": "blazing-notes.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazing_notes.Client.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazing_notes.Client.Shared.SurveyPrompt",
+          "Common.TypeName": "blazing_notes.Client.Shared.Loading",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -285,6 +199,126 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "blazing_notes.Client.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1565465082,
+        "Kind": "Components.Component",
+        "Name": "blazing_notes.Client.Pages.NoteForm",
+        "AssemblyName": "blazing-notes.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NoteForm"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnValidSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnValidSubmit",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Note",
+            "TypeName": "blazing_notes.Shared.Models.NoteDto",
+            "Metadata": {
+              "Common.PropertyName": "Note"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ButtonName",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "ButtonName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazing_notes.Client.Pages.NoteForm"
+        }
+      },
+      {
+        "HashCode": -1499211204,
+        "Kind": "Components.Component",
+        "Name": "blazing_notes.Client.Pages.NoteForm",
+        "AssemblyName": "blazing-notes.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazing_notes.Client.Pages.NoteForm"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnValidSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnValidSubmit",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Note",
+            "TypeName": "blazing_notes.Shared.Models.NoteDto",
+            "Metadata": {
+              "Common.PropertyName": "Note"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ButtonName",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "ButtonName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazing_notes.Client.Pages.NoteForm",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -2016421662,
+        "Kind": "Components.Component",
+        "Name": "blazing_notes.Client.Pages.Index",
+        "AssemblyName": "blazing-notes.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazing_notes.Client.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 1999219798,
+        "Kind": "Components.Component",
+        "Name": "blazing_notes.Client.Pages.Index",
+        "AssemblyName": "blazing-notes.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazing_notes.Client.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazing_notes.Client.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13606,11 +13640,6 @@
   "RootNamespace": "blazing-notes.Client",
   "Documents": [
     {
-      "FilePath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/Pages/Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
-      "FileKind": "component"
-    },
-    {
       "FilePath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/App.razor",
       "TargetPath": "App.razor",
       "FileKind": "component"
@@ -13626,8 +13655,13 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/Shared/SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FilePath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/Pages/NoteForm.razor",
+      "TargetPath": "Pages\\NoteForm.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/Shared/Loading.razor",
+      "TargetPath": "Shared\\Loading.razor",
       "FileKind": "component"
     },
     {

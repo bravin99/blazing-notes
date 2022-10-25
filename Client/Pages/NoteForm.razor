@@ -1,0 +1,25 @@
+@inject HttpClient Http
+@inject NavigationManager NavManager
+@using blazing_notes.Shared.Models
+
+<EditForm Model="@Note" OnValidSubmit="@OnValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <InputText class="form-control mb-2" @bind-Value="Note!.Title" placeholder="Title" />
+        <ValidationMessage For="@(() => Note.Title)" />
+    </div>
+    <div class="form-group">
+        <InputTextArea class="form-control" @bind-Value="Note!.Content" placeholder="Content" />
+        <ValidationMessage For="@(() => Note.Content)" />
+    </div>
+    <div class="text-center">
+        <button type="submit" class="mt-2 btn btn-sm btn-primary">@ButtonName</button>
+    </div>
+</EditForm>
+
+@code
+{
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+    [Parameter] public NoteDto? Note {get; set;}
+    [Parameter] public string? ButtonName {get; set; } = "Save";
+}

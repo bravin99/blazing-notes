@@ -1,9 +1,82 @@
 ﻿@page "/"
+@page "/notes"
+@inject HttpClient Http
+@inject IJSRuntime Js
+@using blazing_notes.Shared.Models
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Notes</PageTitle>
+<div class="container mb-5">
+    <div class="row shadow">
+        <h6 class="text-center mt-2"><em class="oi oi-plus text-success"></em> Add Notes</h6>
+        <div class="me-2 mb-2">
+            <NoteForm Note="@NewNote" OnValidSubmit="@SubmitNewNote" ButtonName="Add New" />
+        </div>
 
-<h1>Hello, world!</h1>
+        @if (!string.IsNullOrEmpty(message))
+        {
+            <div class="alert bg-info">
+                <p class="fw-bold">@message</p>
+            </div>
+        }
+    </div>
+    @if (Notes != null)
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 mt-4">
+            @foreach (var note in Notes)
+            {
+                <div class="col">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">@note.Title</h5>
+                            <div class="card-subtitle mt-3">
+                                <em>@note.Content!.Truncate(80)</em>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="form-group">
+                                <a href="#" title="Edit" class="text-decoration-none btn btn-default border-0"><em class="oi oi-pencil text-success"></em></a>
+                                <a href="#" title="Delete" class="text-decoration-none btn btn-default border-0"><em class="oi oi-trash text-danger"></em></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <Loading />
+    }
+</div>
 
-Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@code
+{
+    private Note[]? Notes {get; set;}
+    public NoteDto NewNote = new NoteDto();
+    private string? message {get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetNotesAsync();
+    }
+
+    async Task GetNotesAsync()
+    {
+        Notes = await Http.GetFromJsonAsync<Note[]>("api/notes/all");
+    }
+
+    async Task SubmitNewNote()
+    {
+        var response = await Http.PostAsJsonAsync("api/notes/new", NewNote);
+        if (response.IsSuccessStatusCode)
+        {
+            NewNote = new NoteDto();
+            await OnInitializedAsync();
+        }
+        else
+        {
+            message = "Error submitting your Note";
+        }
+    }
+}
