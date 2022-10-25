@@ -26,6 +26,15 @@ namespace blazing_notes.Server.Controllers
             return Ok(results);
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Note>> GetNoteById(int id)
+        {
+            var result = await _context.Notes!.Include(r => r.Tags).FirstOrDefaultAsync(r => r.Id == id);
+            if (result == null)
+                return NotFound();
+            return Ok(result);
+        }
+
         [HttpPost("new")]
         public async Task<ActionResult<Note>> NewNote([FromBody] NoteDto request)
         {
