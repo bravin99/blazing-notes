@@ -1,6 +1,7 @@
 using blazing_notes.Shared.Models;
 using blazing_notes.Server.Context;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace blazing_notes.Server.Controllers
 {
@@ -13,6 +14,16 @@ namespace blazing_notes.Server.Controllers
         public NotesController(BlazingNotesDatabaseContext context)
         {
             _context = context;
+        }
+
+        [HttpGet("all")]
+        public async Task<ActionResult<Note[]>> GetNotes()
+        {
+            // TODO: Retrieve only pusblished
+            var results = await _context.Notes!.Include(r => r.Tags).ToListAsync();
+            if (results == null)
+                return NotFound();
+            return Ok(results);
         }
 
         [HttpPost("new")]

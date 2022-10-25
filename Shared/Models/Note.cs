@@ -22,7 +22,7 @@ namespace blazing_notes.Shared.Models
         public int Id { get; set; }
         [Required]
         public string? Name { get; set; }
-        public string?  Description { get; set; }
+        public string?  Description { get; set; } = "No desc";
         public DateTime Added { get; set; }
     }
 }
