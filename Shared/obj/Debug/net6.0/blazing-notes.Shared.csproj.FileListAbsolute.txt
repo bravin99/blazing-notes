@@ -1,0 +1,12 @@
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/obj/Debug/net6.0/blazing-notes.Shared.csproj.AssemblyReference.cache
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/obj/Debug/net6.0/blazing-notes.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/obj/Debug/net6.0/blazing-notes.Shared.AssemblyInfoInputs.cache
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/obj/Debug/net6.0/blazing-notes.Shared.AssemblyInfo.cs
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/obj/Debug/net6.0/blazing-notes.Shared.csproj.CoreCompileInputs.cache
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/bin/Debug/net6.0/blazing-notes.Shared.deps.json
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/bin/Debug/net6.0/blazing-notes.Shared.dll
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/bin/Debug/net6.0/ref/blazing-notes.Shared.dll
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/bin/Debug/net6.0/blazing-notes.Shared.pdb
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/obj/Debug/net6.0/blazing-notes.Shared.dll
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/obj/Debug/net6.0/ref/blazing-notes.Shared.dll
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/obj/Debug/net6.0/blazing-notes.Shared.pdb

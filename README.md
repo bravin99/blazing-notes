@@ -1,2 +1,3 @@
-# blazing-notes
-Notes web app with dotnet blazorwasm
+# Blazing Notes
+
+Notes web app with dotnet blazorwasm and Wpa enabled

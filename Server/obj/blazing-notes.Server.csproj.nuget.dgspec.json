@@ -1,0 +1,224 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Server/blazing-notes.Server.csproj": {}
+  },
+  "projects": {
+    "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/blazing-notes.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/blazing-notes.Client.csproj",
+        "projectName": "blazing-notes.Client",
+        "projectPath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/blazing-notes.Client.csproj",
+        "packagesPath": "/home/shumwe/.nuget/packages/",
+        "outputPath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shumwe/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/blazing-notes.Shared.csproj": {
+                "projectPath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/blazing-notes.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[6.0.2, 6.0.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Server/blazing-notes.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Server/blazing-notes.Server.csproj",
+        "projectName": "blazing-notes.Server",
+        "projectPath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Server/blazing-notes.Server.csproj",
+        "packagesPath": "/home/shumwe/.nuget/packages/",
+        "outputPath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Server/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shumwe/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/blazing-notes.Client.csproj": {
+                "projectPath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/blazing-notes.Client.csproj"
+              },
+              "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/blazing-notes.Shared.csproj": {
+                "projectPath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/blazing-notes.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/blazing-notes.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/blazing-notes.Shared.csproj",
+        "projectName": "blazing-notes.Shared",
+        "projectPath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/blazing-notes.Shared.csproj",
+        "packagesPath": "/home/shumwe/.nuget/packages/",
+        "outputPath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shumwe/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
