@@ -36,7 +36,7 @@ namespace blazing_notes.Server.Controllers
         }
 
         [HttpPost("new")]
-        public async Task<ActionResult<Note>> NewNote([FromBody] NoteDto request)
+        public async Task<ActionResult<string>> NewNote([FromBody] NoteDto request)
         {
             Note note = new Note(){
                 Title = request.Title,
@@ -48,9 +48,19 @@ namespace blazing_notes.Server.Controllers
             {
                 await _context.Notes!.AddAsync(note);
                 await _context.SaveChangesAsync();
-                return Ok(note);
+                return Ok($"created => {note.Title}");
             }
             return BadRequest();
         }
+
+        [HttpPut("update/{id}")]
+        public async Task<ActionResult<string>> UpdateNote(int id, [FromBody]NoteDto update)
+        {
+            var note = await _context.Notes!.FirstOrDefaultAsync(r => r.Id == id);
+            if (note != null)
+            {}
+            return BadRequest();
+        }
+
     }
 }
