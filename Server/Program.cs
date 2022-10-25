@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<BlazingNotesDatabaseContext>(
-    o => o.UseSqlite("filename=Database/notes.db")
+    o => o.UseSqlite("filename=Data/Database/Notes.db")
 );
 
 builder.Services.AddSwaggerGen();
