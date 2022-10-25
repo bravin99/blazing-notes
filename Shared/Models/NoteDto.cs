@@ -9,6 +9,6 @@ namespace blazing_notes.Shared.Models
         public string? Title { get; set; }
         [Required]
         public string?  Content { get; set; }
-        public virtual List<Tag>? Tags { get; set; }
+        public List<Tag>? Tags { get; set; }
     }
 }

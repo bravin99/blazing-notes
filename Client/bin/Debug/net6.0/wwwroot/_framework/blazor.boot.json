@@ -196,15 +196,15 @@
       "mscorlib.dll": "sha256-c1dVVfosFaf5aiS3brr2amBi1Ue0kg6mqECzmCbGyfA=",
       "netstandard.dll": "sha256-+9Yr\/gSP3tCZAMbOdAcGhHGuMcyg\/AaxVKtt3tGsvao=",
       "System.Private.CoreLib.dll": "sha256-SnxOe5QK250duVAQOw0iWr1sODhUuVEUykExQyQ\/WSk=",
-      "blazing-notes.Shared.dll": "sha256-cSUcJZ2\/O6e+OXr95T9A8D5bO3pYZ2ivQFc3mCZZQLg=",
-      "blazing-notes.Client.dll": "sha256-p04piQ4FRh9Soesb+wwVIvQttfH9mBEWgTrwp+oOIaA="
+      "blazing-notes.Shared.dll": "sha256-OokTRT5gatZxh6+bJgLErs5BG+ZCpYtrr25+G0unM0Q=",
+      "blazing-notes.Client.dll": "sha256-PMmeUocPhy2tLtKVl+0pTqpOoT8RO\/YnK1uh+HETZCs="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "blazing-notes.Shared.pdb": "sha256-QWIRBUyLXEZxuoT0ayHPh3KQDeIoDuKK\/f1rc1GTyYE=",
-      "blazing-notes.Client.pdb": "sha256-tdqSEKHsnx6wnV9zM2IceuTzk40hqkVBxxdtojKKJiI="
+      "blazing-notes.Shared.pdb": "sha256-ruafLArW5VA8MnBlGGHisw8OvkJxeX5OhcyYA5TTn7U=",
+      "blazing-notes.Client.pdb": "sha256-0s4EAWSWtTMMu2nvncwlxjvx9eSXh5EAIkYOHAM2iVc="
     },
     "runtime": {
       "dotnet.6.0.2.iww3i7ugt3.js": "sha256-wbTVn69TU0+WI83iB+kky8tf\/BjZdYJeM0rUP96ur\/c=",
