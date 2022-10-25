@@ -74,39 +74,6 @@
         }
       },
       {
-        "HashCode": 1564629140,
-        "Kind": "Components.Component",
-        "Name": "blazing_notes.Client.Pages.FetchData",
-        "AssemblyName": "blazing-notes.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazing_notes.Client.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -1876021921,
-        "Kind": "Components.Component",
-        "Name": "blazing_notes.Client.Pages.FetchData",
-        "AssemblyName": "blazing-notes.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazing_notes.Client.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazing_notes.Client.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -2016421662,
         "Kind": "Components.Component",
         "Name": "blazing_notes.Client.Pages.Index",
@@ -13638,11 +13605,6 @@
   },
   "RootNamespace": "blazing-notes.Client",
   "Documents": [
-    {
-      "FilePath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/Pages/FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
     {
       "FilePath": "/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Client/Pages/Counter.razor",
       "TargetPath": "Pages\\Counter.razor",

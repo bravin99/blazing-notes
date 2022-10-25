@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Server.Context;
+using blazing_notes.Server.Context;
 
 #nullable disable
 
 namespace blazingnotes.Server.Data.Migrations
 {
     [DbContext(typeof(BlazingNotesDatabaseContext))]
-    [Migration("20221025135933_Initial database migrations")]
+    [Migration("20221025140930_Initial database migrations")]
     partial class Initialdatabasemigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -19,7 +19,7 @@ namespace blazingnotes.Server.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.10");
 
-            modelBuilder.Entity("Shared.Models.Note", b =>
+            modelBuilder.Entity("blazing_notes.Shared.Models.Note", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -45,7 +45,7 @@ namespace blazingnotes.Server.Data.Migrations
                     b.ToTable("Notes");
                 });
 
-            modelBuilder.Entity("Shared.Models.Tag", b =>
+            modelBuilder.Entity("blazing_notes.Shared.Models.Tag", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -71,14 +71,14 @@ namespace blazingnotes.Server.Data.Migrations
                     b.ToTable("Tag");
                 });
 
-            modelBuilder.Entity("Shared.Models.Tag", b =>
+            modelBuilder.Entity("blazing_notes.Shared.Models.Tag", b =>
                 {
-                    b.HasOne("Shared.Models.Note", null)
+                    b.HasOne("blazing_notes.Shared.Models.Note", null)
                         .WithMany("Tags")
                         .HasForeignKey("NoteId");
                 });
 
-            modelBuilder.Entity("Shared.Models.Note", b =>
+            modelBuilder.Entity("blazing_notes.Shared.Models.Note", b =>
                 {
                     b.Navigation("Tags");
                 });

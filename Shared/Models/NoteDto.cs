@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Shared.Models
+namespace blazing_notes.Shared.Models
 {
     public class NoteDto
     {

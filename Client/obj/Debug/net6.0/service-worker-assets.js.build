@@ -857,19 +857,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-CWqYKFjoTJd4igsp0yBWJZsVPnwRrHOn6KZHnCwOKuY=",
+      "hash": "sha256-TKDk1LsPKy5NdcDpaS2yDga1\/SmsyaN17WLfb8xILEw=",
       "url": "_framework\/blazing-notes.Shared.dll"
     },
     {
-      "hash": "sha256-liSUg\/2vNB3hPco4S9B5qsyVndeNvgxFDx3z6Cwu6zk=",
+      "hash": "sha256-1SNVZTzDVpjsebBYjVt3VUdeHSh+Bdp4NQQGdXkHQI0=",
       "url": "_framework\/blazing-notes.Shared.pdb"
     },
     {
-      "hash": "sha256-lZJDA6VEPyQxtVSo4O4UTQq57VlL7FMJC0RLmONMKsY=",
+      "hash": "sha256-p04piQ4FRh9Soesb+wwVIvQttfH9mBEWgTrwp+oOIaA=",
       "url": "_framework\/blazing-notes.Client.dll"
     },
     {
-      "hash": "sha256-bzwzAj+tFICD+4IaUczl2e0LqmKfjY0PiaJJLo9IDMU=",
+      "hash": "sha256-tdqSEKHsnx6wnV9zM2IceuTzk40hqkVBxxdtojKKJiI=",
       "url": "_framework\/blazing-notes.Client.pdb"
     },
     {
@@ -877,9 +877,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-M8UDXVrUILcYtlXQYwU9w+3XXiEzKW9HS6TcLk+9jk8=",
+      "hash": "sha256-Q96Cmm4PjhgKcFrJJGKx\/c\/p0XEgpO208uasGUGzWHI=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "hE9Tp8t4"
+  "version": "45CLiCAK"
 };

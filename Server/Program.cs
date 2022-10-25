@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Server.Context;
+using blazing_notes.Server.Context;
 using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);

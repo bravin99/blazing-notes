@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Shared.Models;
+using blazing_notes.Shared.Models;
 
-namespace Server.Context
+namespace blazing_notes.Server.Context
 {
     public class BlazingNotesDatabaseContext : DbContext
     {
