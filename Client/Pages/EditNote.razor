@@ -1,0 +1,30 @@
+@page "/note/edit/{NoteId:int}"
+@inject HttpClient Http
+@inject IJSRuntime Js
+@inject NavigationManager NavManager
+@using blazing_notes.Shared.Models
+
+<PageTitle>Edit Note</PageTitle>
+
+<h1 class="text-center mb-4">Editing</h1>
+
+<NoteForm Note="NoteEdit" ButtonName="Update Note" OnValidSubmit="@HandleEdit" Rows="18" />
+
+@code
+{
+    [Parameter] public int NoteId {get; set; }
+    private NoteDto? NoteEdit = new NoteDto();
+
+    protected override async Task OnInitializedAsync()
+    {
+        NoteEdit = await Http.GetFromJsonAsync<NoteDto>($"api/notes/{NoteId}");
+    }
+
+    async Task HandleEdit()
+    {
+        await Http.PutAsJsonAsync($"api/notes/update/{NoteId}", NoteEdit);
+        await Js.InvokeVoidAsync("alert", $"Updated successfully");
+        NavManager.NavigateTo("/");
+    }
+
+}

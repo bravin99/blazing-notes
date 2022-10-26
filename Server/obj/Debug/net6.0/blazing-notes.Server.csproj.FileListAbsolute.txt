@@ -124,3 +124,4 @@
 /home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Server/bin/Debug/net6.0/id/Humanizer.resources.dll
 /home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Server/bin/Debug/net6.0/fr/Humanizer.resources.dll
 /home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Server/bin/Debug/net6.0/lv/Humanizer.resources.dll
+/home/shumwe/Desktop/C#/bravin99Projects/blazor/blazing-notes/Server/bin/Debug/net6.0/zh-CN/Humanizer.resources.dll

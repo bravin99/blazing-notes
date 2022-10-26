@@ -9,7 +9,7 @@
     <div class="row shadow">
         <h6 class="text-center mt-2"><em class="oi oi-plus text-success"></em> Add Notes</h6>
         <div class="me-2 mb-2">
-            <NoteForm Note="@NewNote" OnValidSubmit="@SubmitNewNote" ButtonName="Add New" />
+            <NoteForm Note="@NewNote" OnValidSubmit="@SubmitNewNote" ButtonName="Add New" Rows="3" />
         </div>
 
         @if (!string.IsNullOrEmpty(message))
@@ -29,13 +29,21 @@
                         <div class="card-body">
                             <h5 class="card-title text-center">@note.Title</h5>
                             <div class="card-subtitle mt-3">
-                                <em>@note.Content!.Truncate(80)</em>
+                                @note.Content!.Truncate(80)
                             </div>
+                            @foreach (var tag in note.Tags!)
+                            {
+                                <small class="m-1 text-primary">@tag.Name</small>
+                            }
                         </div>
                         <div class="card-footer text-center">
                             <div class="form-group">
-                                <a href="#" title="Edit" class="text-decoration-none btn btn-default border-0"><em class="oi oi-pencil text-success"></em></a>
-                                <a href="#" title="Delete" class="text-decoration-none btn btn-default border-0"><em class="oi oi-trash text-danger"></em></a>
+                                <a href="/note/edit/@note.Id" title="View/Edit" class="text-decoration-none btn btn-default border-0">
+                                    <em class="oi oi-pencil text-success"></em>
+                                </a>
+                                <button @onclick="@(() => DeleteNote(note.Id))" title="Delete" class="text-decoration-none btn btn-default border-0">
+                                    <em class="oi oi-trash text-danger"></em>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -48,7 +56,6 @@
         <Loading />
     }
 </div>
-
 
 @code
 {
@@ -77,6 +84,17 @@
         else
         {
             message = "Error submitting your Note";
+        }
+    }
+
+    async Task DeleteNote(int NoteId)
+    {
+        var note = Notes!.First(n => n.Id == NoteId );
+        if (await Js.InvokeAsync<bool>("confirm", $"Are you sure yo want to delete [{note!.Title}] ?"))
+        {
+            await Http.DeleteAsync($"/api/notes/delete/{NoteId}");
+            Console.WriteLine($"Deleted {note.Title}");
+            await OnInitializedAsync();
         }
     }
 }
